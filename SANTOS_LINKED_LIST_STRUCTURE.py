@@ -26,21 +26,33 @@ class LinkedList:
             self.head = new_node
             self.tail = new_node
 
-    def delete_at_beginning(self):
-        if self.head:
-            removed = self.head.data
-            self.head = self.head.next
-            return removed
-        else:
-            return None
+    def search(self, data):
+        current_node = self.head
+        while current_node:
+            if current_node.data == data:
+                return True
+            current_node = current_node.next
+        return False
 
     def print_list(self):
         current_node = self.head
+        if not current_node:
+            print("X")
+            return
         while current_node:
             print(current_node.data, end=" -> ")
             current_node = current_node.next
         print("X")
 
+    # remove at beginning
+    def remove_beginning(self):
+        if self.head:
+            removed = self.head.data
+            self.head = self.head.next
+            if self.head is None:
+                self.tail = None
+            return removed
+        return None
 
 # ➤ MAIN EXECUTION
 sushi_preparation = LinkedList()
@@ -48,9 +60,10 @@ sushi_preparation.insert_at_end("prepare")
 sushi_preparation.insert_at_end("roll")
 sushi_preparation.insert_at_beginning("assemble")
 
-print("LINKED LIST:")
+print("\nLINKED LIST:")
 sushi_preparation.print_list()
 
-removed = sushi_preparation.delete_at_beginning()
-print(f"\nREMOVED BEGINNING ('{removed}'):")
+# remove at beginning
+removed = sushi_preparation.remove_beginning()
+print(f"\nREMOVED AT BEGINNING ('{removed}'):")
 sushi_preparation.print_list()

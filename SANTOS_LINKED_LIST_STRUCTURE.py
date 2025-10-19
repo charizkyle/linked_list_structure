@@ -73,6 +73,13 @@ class LinkedList:
         current.next = None
         self.tail = current
         return removed
+    
+    def display(self):
+        current = self.head
+        while current:
+            print(current.data, end=" -> ")
+            current = current.next
+        print("X")
 
 # ➤ MAIN EXECUTION
 sushi_preparation = LinkedList()

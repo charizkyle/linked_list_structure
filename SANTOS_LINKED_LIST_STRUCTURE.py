@@ -107,7 +107,7 @@ sushi_preparation.insert_at_end("prepare")
 sushi_preparation.insert_at_end("roll")
 sushi_preparation.insert_at_beginning("assemble")
 
-print("\nLINKED LIST:")
+print("\nSUSHI PREP LINKED LIST:")
 sushi_preparation.print_list()
 
 # remove at beginning

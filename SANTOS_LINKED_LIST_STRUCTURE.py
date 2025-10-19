@@ -53,6 +53,26 @@ class LinkedList:
                 self.tail = None
             return removed
         return None
+    
+        # remove at end
+    def remove_at_end(self):
+        if self.head is None:
+            return None
+        
+        if self.head == self.tail:
+            removed = self.head.data
+            self.head = None
+            self.tail = None
+            return removed
+
+        current = self.head
+        while current.next != self.tail:
+            current = current.next
+        
+        removed = self.tail.data
+        current.next = None
+        self.tail = current
+        return removed
 
 # ➤ MAIN EXECUTION
 sushi_preparation = LinkedList()
@@ -67,3 +87,8 @@ sushi_preparation.print_list()
 removed = sushi_preparation.remove_beginning()
 print(f"\nREMOVED AT BEGINNING ('{removed}'):")
 sushi_preparation.print_list()
+
+# remove at end
+removed = sushi_preparation.remove_at_end()
+print(f"\nREMOVED AT END ('{removed}'):")
+sushi_preparation.display()

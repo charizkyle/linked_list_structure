@@ -2,7 +2,7 @@
 
 # 🍣 Linked List Structure – How to Make a Sushi
 
-This project demonstrates a **Linked List implementation in Python** using a fun example — the steps to make sushi! It includes methods to remove nodes from the **beginning**, **end**, or a **specific step** in the process.
+This project demonstrates a **Linked List implementation** and using methods to remove nodes from the **beginning**, **end**, or a **specific step** in the process.
 
 ## 🧠 Features
 - `append(data)` – Add a new step to the end of the list  
@@ -16,20 +16,21 @@ This project demonstrates a **Linked List implementation in Python** using a fun
 ---
 
 HOW TO MAKE A SUSHI 🍣 (LINKED LIST):
+
 prepare -> cook rice -> slice ingredients -> roll sushi -> serve -> X
 
 REMOVED AT BEGINNING ('prepare'):
+
 cook rice -> slice ingredients -> roll sushi -> serve -> X
 
 REMOVED AT END ('serve'):
+
 cook rice -> slice ingredients -> roll sushi -> X
 
 REMOVED AT ('slice ingredients'):
+
 cook rice -> roll sushi -> X
 
 ```
-
-If the user enters a step that doesn’t exist, the program prints:
+If the user enters a step that doesn’t exist, the program prints: X
 ```
-
-X

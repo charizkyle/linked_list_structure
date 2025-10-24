@@ -15,21 +15,26 @@ This project demonstrates a **Linked List implementation** and with methods to r
 
 ---
 
+```
 HOW TO MAKE A SUSHI 🍣 (LINKED LIST):
 
 prepare -> cook rice -> slice ingredients -> roll sushi -> serve -> X
-
+```
+```
 REMOVED AT BEGINNING ('prepare'):
 
 cook rice -> slice ingredients -> roll sushi -> serve -> X
-
+```
+```
 REMOVED AT END ('serve'):
 
 cook rice -> slice ingredients -> roll sushi -> X
-
+```
+```
 REMOVED AT ('slice ingredients'):
 
 cook rice -> roll sushi -> X
+```
 
 ```
 If the user enters a step that doesn’t exist, the program prints: X

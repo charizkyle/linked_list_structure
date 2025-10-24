@@ -2,7 +2,7 @@
 
 # 🍣 Linked List Structure – How to Make a Sushi
 
-This project demonstrates a **Linked List implementation** and using methods to remove nodes from the **beginning**, **end**, or a **specific step** in the process.
+This project demonstrates a **Linked List implementation** and uses methods to remove nodes from the **beginning**, **end**, or a **specific step** in the process.
 
 ## 🧠 Features
 - `append(data)` – Add a new step to the end of the list  
